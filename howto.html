@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+	<style>
+	*, 
+	*:before, 
+	*:after {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		font: 18px "PT Serif", Georgia, serif;
+		background: #f5f5f5;
+		color: #222;
+	}
+	.wrapper {
+		width: 960px;
+		margin: 40px auto; 
+		padding: 1em;
+	}
+	h1, 
+	h3 { font: 700 3em "PT Sans", "Helvetica Neue", sans-serif }
+	h3 {
+		text-transform: uppercase;
+		color: #aaa; 
+		font-size: .9em;
+		letter-spacing: 2px;
+		margin-top: 5em; 
+	}
+	span {
+		padding: 2px 4px;
+		border: 1px solid #ddd;
+		font-size: .9em;
+		border-radius: 2px;
+		margin: 0 5px;
+	}
+	img { 
+		display: block;
+		width: 40%;
+		height: auto;
+		margin: 30px auto;
+	}
+	img.noresize { width: auto }
+	p { 
+		display: block;
+		margin-bottom: 2em;
+		text-indent: 1em;
+	}
+	small {
+		display: block;
+		font-style: italic;
+		text-align: center;
+		margin: 2em auto;
+		color: #aaa;
+	}
+	em { 
+		font: italic 1.3em "PT Serif", Georgia, serif;
+		line-height: 1;
+	}
+	pre {
+		margin: 0 auto;
+		font-size: .8em;
+		padding: 5px;
+		width: 60%;
+		overflow: scroll;
+		border: 1px solid #ddd;
+		border-radius: 2px;
+	}
+	footer {
+		margin-top: 5em; 
+		border-top: 1px double #ddd;
+		padding: 2em; 
+		font-style: italic;
+		font-size: .8em; 
+		color: rgba(0, 0, 0, .5);
+		text-align: center
+	}
+	a { 
+		color: #bbb;
+		text-decoration: none;
+		border-bottom: 1px solid #bbb;
+	}
+	a:hover { 
+		color: #ddd;
+		border-bottom: 1px solid #ddd
+	}	
+	</style>
+	<link rel="stylesheet" href="http://brick.a.ssl.fastly.net/PT+Sans:700/PT+Serif:400/PT+Serif:400i">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>{{ title }}</h1>
+
+		<small>{{ tagline }}</small>
+
+		<h3>{{ step1.title }}</h3>
+		<p>{{ step1.description }}</p>
+		<a href="img/step_1.jpg" target="_blank">
+			<img src="img/step_1.jpg">
+		</a>
+
+		<h3>{{ step2.title }}</h3>
+		<p>{{ step2.description }}</p>
+		<a href="img/step_2.jpg" target="_blank">
+			<img src="img/step_2.jpg">
+		</a>
+
+		<h3>{{ step3.title }}</h3>
+		<p>{{ step3.description }}</p>
+		<a href="img/step_3.jpg" target="_blank">
+			<img src="img/step_3.jpg">
+		</a>
+
+	<footer>
+		<p>{{ footer }}</p>
+	</footer>
+
+	</div>
+</body>
+</html>
